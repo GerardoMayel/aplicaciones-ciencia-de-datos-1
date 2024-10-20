@@ -1,0 +1,94 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribución
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Directorios de entorno virtual
+venv/
+ENV/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Archivos de configuración de editores
+.idea/
+.vscode/
+*.swp
+*~
+
+# Archivos temporales y de logs
+*.log
+*.tmp
+*.bak
+*.pid
+*.out
+*.err
+
+# Archivos de datos
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.json
+*.xml
+*.h5
+
+# Archivos de pruebas y cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Archivos de empaquetado
+MANIFEST
+
+# Archivos de Docker
+Dockerfile
+*.dockerfile
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+
+# Archivos creados por pytest
+.pytest_cache/
+
+# Otros archivos ocultos de MacOS y sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Archivos .pkl
+*.pkl
+
+#Archivos YAML
+credentials.yaml

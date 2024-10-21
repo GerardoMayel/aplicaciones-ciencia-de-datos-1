@@ -92,3 +92,6 @@ Thumbs.db
 
 #Archivos YAML
 credentials.yaml
+
+#Repositorio
+repo_github.txt

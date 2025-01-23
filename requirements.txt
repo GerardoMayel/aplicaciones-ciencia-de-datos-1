@@ -1,0 +1,27 @@
+# Core dependencies for the API
+flask==3.0.2
+werkzeug==3.0.1
+sqlalchemy==2.0.27
+psycopg2-binary==2.9.9
+boto3==1.34.34
+botocore==1.34.34
+pyyaml==6.0.1
+pyarrow==14.0.1  # Añadido para soporte de pandas
+
+# Data processing and ML
+numpy==1.26.4
+pandas==2.2.0
+scikit-learn==1.4.0
+scipy==1.12.0
+
+# Utils
+python-dateutil==2.8.2
+pytz==2024.1
+six==1.16.0
+jmespath==1.0.1
+s3transfer==0.10.0
+urllib3>=1.25.4,<1.27  # Ajustado para ser compatible con botocore
+
+# Development dependencies
+pytest==8.0.0
+pytest-cov==4.1.0

@@ -1,0 +1,75 @@
+# model_monitor/templates/model_monitor/dashboard.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Monitoreo del Modelo</title>
+    <style>
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .plot-container {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .error {
+            color: red;
+            padding: 20px;
+            border: 1px solid red;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body style="background-color: #f0f2f5;">
+    <div class="container">
+        <div class="header">
+            <h1>Dashboard de Monitoreo del Modelo</h1>
+            {% if prediction_date %}
+                <p>Fecha de predicción: {{ prediction_date }}</p>
+            {% endif %}
+        </div>
+
+        {% if error %}
+            <div class="error">
+                <h2>Error</h2>
+                <p>{{ error }}</p>
+            </div>
+        {% else %}
+            <div class="plot-container">
+                <h2>Distribución de Scores</h2>
+                {{ score_histogram | safe }}
+            </div>
+
+            <div class="plot-container">
+                <h2>Distribución de Etiquetas</h2>
+                {{ label_histogram | safe }}
+            </div>
+
+            <div class="plot-container">
+                <h2>Curva ROC</h2>
+                {% if roc_curve %}
+                    <img src="data:image/png;base64,{{ roc_curve }}" 
+                         alt="ROC Curve" 
+                         style="max-width: 100%; height: auto;">
+                {% else %}
+                    <p>No se pudo cargar la curva ROC</p>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

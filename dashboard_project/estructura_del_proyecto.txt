@@ -1,0 +1,17 @@
+dashboard_project/               # Directorio raíz del proyecto
+│
+├── manage.py                   # Script de administración de Django
+├── requirements_dashboard.txt   # Dependencias del proyecto
+│
+├── dashboard_project/          # Configuración principal del proyecto
+│   ├── __init__.py
+│   ├── settings.py            # Configuración de Django
+│   └── urls.py                # URLs principales
+│
+└── model_monitor/             # Aplicación de monitoreo
+    ├── __init__.py
+    ├── urls.py                # URLs de la aplicación
+    ├── views.py               # Vistas y lógica del dashboard
+    └── templates/             # Plantillas HTML
+        └── model_monitor/
+            └── dashboard.html  # Template del dashboard

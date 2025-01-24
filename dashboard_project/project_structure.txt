@@ -1,0 +1,26 @@
+Estructura del Proyecto Django
+=============================
+
+.
+├── dashboard_project
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── db.sqlite3
+├── estructura_del_proyecto.txt
+├── list_django_structure.sh
+├── manage.py
+├── model_monitor
+│   ├── __init__.py
+│   ├── templates
+│   │   └── model_monitor
+│   │       └── dashboard.html
+│   ├── urls.py
+│   └── views.py
+├── project_structure.txt
+├── requirements_dashboard.txt
+├── static
+└── staticfiles
+
+7 directories, 14 files
